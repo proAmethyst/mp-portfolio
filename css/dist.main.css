@@ -4,36 +4,53 @@
   height: 15vh;
 }
 
-section {
-  padding: clamp(1rem, 5vw, 3.5em);
+.home-page-title-section {
   margin-top: clamp(1rem, 7vw, 5rem);
   position: relative;
 }
-section h1 {
+.home-page-title-section h1 {
   color: #ffffff;
   font-size: 5.5rem;
   font-weight: 900;
   text-transform: uppercase;
 }
-section h2 {
+.home-page-title-section h2 {
   color: #ffffff;
   font-size: 4rem;
   font-weight: 100;
 }
-section h4 {
+.home-page-title-section h4 {
   color: #ffffff;
   font-size: 2rem;
   letter-spacing: 5px;
   padding: 25px 0;
 }
-section .home-page-image {
-  position: absolute;
+
+.home-page-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #ffffff;
+  font-size: 1.5rem;
+  gap: 2rem;
+}
+.home-page-bottom .bottom-text {
+  padding-top: 8px;
 }
 
-section .about-page {
+.about-page-section {
+  margin-top: clamp(1rem, 7vw, 5rem);
+}
+.about-page-section .about-page {
   margin-top: clamp(1rem, 3vh, 5rem);
 }
-section .about-page p {
+.about-page-section .about-page p {
   font-size: 3em;
 }
 
@@ -53,7 +70,25 @@ section .about-page p {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(24, 36, 63);
+}
+
+.dark-background {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-page {
+  background-image: url(/MPportfolio/dist/Assets/home-page-background.jpg);
+  background-size: cover;
+  padding: clamp(1rem, 5vw, 3.5em);
+}
+
+@media only screen and (max-width: 865px) {
+  .home-page {
+    background-size: cover;
+  }
+}
+.about-page-section {
+  padding: clamp(1rem, 5vw, 3.5em);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -65,6 +100,7 @@ header {
   position: sticky;
   top: 0px;
   background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
 }
 header .wrapper {
   position: relative;
