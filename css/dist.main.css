@@ -1,6 +1,13 @@
+.buffer {
+  display: inline-block;
+  max-width: 50%;
+  height: 15vh;
+}
+
 section {
   padding: clamp(1rem, 5vw, 3.5em);
   margin-top: clamp(1rem, 7vw, 5rem);
+  position: relative;
 }
 section h1 {
   color: #ffffff;
@@ -19,8 +26,14 @@ section h4 {
   letter-spacing: 5px;
   padding: 25px 0;
 }
+section .home-page-image {
+  position: absolute;
+}
 
-section p {
+section .about-page {
+  margin-top: clamp(1rem, 3vh, 5rem);
+}
+section .about-page p {
   font-size: 3em;
 }
 
