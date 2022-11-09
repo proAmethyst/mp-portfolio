@@ -253,10 +253,10 @@
   }
   .avatar-text-wrapper .full-text {
     text-align: justify;
+    max-width: 80% !important;
   }
   .avatar-text-wrapper .find-me-here {
     text-align: center;
-    max-width: 80% !important;
   }
   .avatar-text-wrapper .find-me-here .find-me-img {
     -webkit-box-pack: center !important;
