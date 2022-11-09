@@ -253,6 +253,7 @@
   }
   .avatar-text-wrapper .full-text {
     text-align: justify;
+    max-width: 80% !important;
   }
   .avatar-text-wrapper .find-me-here {
     text-align: center;
